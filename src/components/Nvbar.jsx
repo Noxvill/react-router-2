@@ -3,6 +3,7 @@ import { Navbar } from "react-bootstrap"
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import './Nvbar.css'
+import { Link } from "react-router-dom";
 
 
 export default function Nvbar() {
@@ -27,8 +28,8 @@ return (
 
         <Nav className="me-auto" style={{ marginLeft: '80%'}}>
       
-        <NavLink className={`text-white ${setActiveClass}`} to="/" style={{ marginRight: '10px' }} >Home</NavLink>
-            <NavLink className={`text-white ${setActiveClass}`} to="/personajes">Pokemones</NavLink>
+        <NavLink className={`text-white ${setActiveClass}`} to="/Home" style={{ marginRight: '10px' }} >Home</NavLink>
+        <NavLink className={`text-white ${setActiveClass}`} to="/Pokemones">Pokemones</NavLink>
          
       
         </Nav>
